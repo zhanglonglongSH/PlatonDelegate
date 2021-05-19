@@ -25,9 +25,9 @@ addr_list=[
     {
         # 委托收益信息  bf_privkey：钱包私钥  address：钱包地址
         'benifit_addr_privkey':[
-            {'bf_privkey':'9b7294ea5cc7a4de4fada550d1519ef5f5cb009bc2f4e16c5a33987e4607cbbe','address':'lat1nymlzwgnzega44n7krcc6fmg2x2yjfzjkv2e6h'},
-            {'bf_privkey':'1cc9fadfe743e4f387ba9effdd5aed438ec3795d5416a203c04a2c49ba5774d6','address':'lat1x7jqhdwydce64q0kmpafzylevxww8ymdvzez8w'},
-            {'bf_privkey':'bffddfb0215581b21eed8b3dfb9f65f22098cb6135277c40e82c46934b46e2e8','address':'lat1g00wa9vph9hm5y4434gpuutyj2dcxkvy4fzlqy'},
+            {'bf_privkey':'92b7294ea5cc7a4de4fada550d1519ef5f5cb009bc2f4e16c5a33987e4607cbbe','address':'lat1nymlzwgnzega44n7krcc6fmg2x2yjfzjkv2e6h'},
+            {'bf_privkey':'12cc9fadfe743e4f387ba9effdd5aed438ec3795d5416a203c04a2c49ba5774d6','address':'lat1x7jqhdwydce64q0kmpafzylevxww8ymdvzez8w'},
+            {'bf_privkey':'bf2fddfb0215581b21eed8b3dfb9f65f22098cb6135277c40e82c46934b46e2e81','address':'lat1g00wa9vph9hm5y4434gpuutyj2dcxkvy4fzlqy'},
         ],
         # 节点id
         'node_id':"95cae658a18c6b1334a205cdb76599ca810907d8f33f737fa41cbdaba39997112d7f8f46c56c1abcda8d5129eb1d7d494305802300fdd33f10dc6d92f7118574"
