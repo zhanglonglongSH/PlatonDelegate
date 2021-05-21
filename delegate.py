@@ -18,9 +18,12 @@ min_withdraw_rewarddeteg_count = 0.5
 # 设置收益节点最小含有的lat数
 min_withdraw_nodereward_count = 2
 # 设置间隔时间
-sleep_time_seconds = 60*30
-# 设置委托地址信息表
+sleep_time_seconds = 60*60*1
 
+# 是否是线上
+is_online = True
+
+# 设置委托地址信息表
 addr_list=[
     {
         # 委托收益信息  bf_privkey：钱包私钥  address：钱包地址
@@ -69,7 +72,8 @@ def deal( ppos, platon, addr_list):
                     logging.error(f'🤷‍♂️ Parse error:节点地址委托失败!!')
 
 # 设置网络
-w3 = Web3(HTTPProvider("http://47.241.98.219:6789"),chain_id=210309);
+chain_id = 100 if is_online == True else 210309
+w3 = Web3(HTTPProvider("http://47.241.98.219:6789"),chain_id=chain_id);
 ppos = Ppos(w3);
 platon = PlatON(w3);
 
@@ -80,6 +84,6 @@ while True:
         time.sleep(sleep_time_seconds)
     except (TypeError, Exception) as parseErr:
         logging.error(f'🤷‍♂️ Parse error: {parseErr}', print_mode="warning")
-        time.sleep(10)
+        time.sleep(sleep_time_seconds)
 
 
